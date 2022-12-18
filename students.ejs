@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: aqua;
+            align-items: center;
+        }
+
+        h1 {
+            border: 2px solid burlywood;
+            font-size: 70px;
+            font-weight: 900;
+            color: blue;
+            align-items: center;
+        }
+
+        form {
+            border: 3px solid black;
+            border-radius: 10px;
+        }
+
+        button,
+        input {
+            background-color: aquamarine;
+            align-items: center;
+            border: 2px solid red;
+            border-radius: 10px;
+            color: black;
+            margin-top: 10px;
+            margin-left: 450px;
+            margin-bottom: 10px;
+            margin-right: 10px;
+            width: 400px;
+            height: 50px;
+            font-size: 30px;
+            font-weight: 200;
+        }
+
+
+        span {
+            align-items: center;
+            color: black;
+            margin-top: 10px;
+            margin-left: 450px;
+            margin-bottom: 10px;
+            margin-right: 10px;
+            width: 400px;
+            height: 50px;
+            font-size: 30px;
+            font-weight: 600;
+        }
+
+        table,
+        td,
+        tr,
+        th {
+            height: 30px;
+            border: 2px solid black;
+            margin-top: 5px;
+            margin-left: 5px;
+            margin-bottom: 5px;
+            margin-right: 5px;
+        }
+
+        td {
+            width: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Students List</h1>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Maths</th>
+            <th>SST</th>
+            <th>Actions</th>
+        </tr>
+        <% for(let i=0;i<students.length;i++) {%>
+            <tr>
+                <td><%- students[i].id %></td>
+                <td><%- students[i].student_name %></td>
+                <td><%- students[i].marks1 %></td>
+                <td><%- students[i].marks2 %></td>
+                <td>
+                    <a href="/delete-student?id=<%-students[i].id%>">Delete</a>
+                    <a href="/update-student?id=<%-students[i].id%>">Update</a>
+                </td>
+            </tr>
+            <%}%>
+    </table>
+</body>
+
+</html>

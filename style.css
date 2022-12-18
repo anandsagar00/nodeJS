@@ -1,0 +1,47 @@
+body {
+    background-color: aqua;
+    align-items: center;
+}
+
+h1 {
+    border: 2px solid burlywood;
+    font-size: 70px;
+    font-weight: 900;
+    color: blue;
+    align-items: center;
+}
+
+form {
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+button,input {
+    background-color: aquamarine;
+    align-items: center;
+    border: 2px solid red;
+    border-radius: 10px;
+    color: black;
+    margin-top: 10px;
+    margin-left: 450px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    width: 400px;
+    height: 50px;
+    font-size: 30px;
+    font-weight: 200;
+}
+
+
+span {
+    align-items: center;
+    color: black;
+    margin-top: 10px;
+    margin-left: 450px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    width: 400px;
+    height: 50px;
+    font-size: 30px;
+    font-weight: 600;
+}

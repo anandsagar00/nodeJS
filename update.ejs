@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+
+    <style>
+        body {
+            background-color: aqua;
+            align-items: center;
+        }
+
+        h1 {
+            border: 2px solid burlywood;
+            font-size: 70px;
+            font-weight: 900;
+            color: blue;
+            align-items: center;
+        }
+
+        form {
+            border: 3px solid black;
+            border-radius: 10px;
+        }
+
+        button,
+        input {
+            background-color: aquamarine;
+            align-items: center;
+            border: 2px solid red;
+            border-radius: 10px;
+            color: black;
+            margin-top: 10px;
+            margin-left: 450px;
+            margin-bottom: 10px;
+            margin-right: 10px;
+            width: 400px;
+            height: 50px;
+            font-size: 30px;
+            font-weight: 200;
+        }
+
+
+        span {
+            align-items: center;
+            color: black;
+            margin-top: 10px;
+            margin-left: 450px;
+            margin-bottom: 10px;
+            margin-right: 10px;
+            width: 400px;
+            height: 50px;
+            font-size: 30px;
+            font-weight: 600;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Update Details </h1>
+    <form action="" method="post">
+        <input type="hidden" name="id" value="<%=student[0].id%>">
+        <span>Enter Name</span><br>
+        <input type="text" name="name" value="<%=student[0].student_name%>" placeholder="Name"><br>
+        <span>Enter Marks1</span><br>
+        <input type="text" name="marks1" value="<%=student[0].marks1%>" placeholder="Enter SST marks"><br>
+        <span>Enter Marks2</span><br>
+        <input type="text" name="marks2" value="<%=student[0].marks2%>" placeholder="Enter MATH marks"><br>
+        <input type="submit" value="Update">
+    </form>
+</body>
+
+</html>
